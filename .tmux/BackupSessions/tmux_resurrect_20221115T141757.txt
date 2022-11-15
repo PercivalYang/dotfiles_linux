@@ -1,0 +1,16 @@
+pane	0	1	1	:*Z	1	Linux240	:/home/yangziyin	0	vim	:vim .tmux.conf
+pane	0	1	1	:*Z	2	Linux240	:/home/yangziyin	1	zsh	:
+pane	0	2	0	:##	1	Linux240	:/home/yangziyin	1	ssh	:ssh stu
+pane	0	3	0	:	1	Linux240	:/home/yangziyin/Project/Uncertainty/MC_Dropout	1	sh	:/bin/sh /home/yangziyin/pycharm/bin/pycharm.sh .
+pane	0	3	0	:	2	Linux240	:/home/yangziyin/clash	0	cfw	:/home/yangziyin/clash/cfw --enable-crashpad
+pane	0	3	0	:	3	Linux240	:/home/yangziyin	0	zsh	:
+pane	0	3	0	:	4	Linux240	:/home/yangziyin	0	zsh	:
+pane	0	4	0	:M	1	Linux240	:/home/yangziyin	0	ssh	:ssh -L 6006:localhost:6006 -N -T stu
+pane	0	4	0	:M	2	Linux240	:/home/yangziyin	1	ssh	:ssh -L 6007:localhost:6007 -N -T stu
+pane	0	5	0	:-	1	Linux240	:/home/yangziyin	1	zsh	:
+window	0	1	:dotfiles	1	:*Z	6d58,105x27,0,0{52x27,0,0,0,52x27,53,0,1}	off
+window	0	2	:Server	0	:##	c504,105x27,0,0,7	off
+window	0	3	:localApp	0	:	44fb,105x27,0,0[105x13,0,0{52x13,0,0,10,52x13,53,0,16},105x13,0,14{52x13,0,14,14,52x13,53,14,17}]	off
+window	0	4	:LinkServer	0	:M	95be,105x27,0,0[105x12,0,0,11,105x14,0,13,12]	off
+window	0	5	:FileCP	0	:-	62b7,105x27,0,0,18	off
+state	0	
