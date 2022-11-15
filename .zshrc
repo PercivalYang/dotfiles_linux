@@ -131,3 +131,7 @@ export AM_HOME=/home/yangziyin/cs_files/ics2022/abstract-machine
 export PATH=/usr/lib/ccache:$PATH
 export DISPLAY=:0.0
 conda activate jy
+# ===== Docker 配置 =====
+export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
