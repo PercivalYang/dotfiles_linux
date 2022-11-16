@@ -76,11 +76,11 @@ call plug#end()
 let mapleader=";"
 
 " ======== Markdown Preview configuration ======== 
-let g:mkdp_auto_start = 1  " auto start preview
+let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1  " auto close preview
 let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser to open preview page
 let g:mkdp_echo_preview_url = 1 " echo preview page url in cmd, default:0
-let g:mkdp_theme = 'dark'
+let g:mkdp_theme='dark'
 
 nmap <leader>s <Plug>MarkdownPreview
 nmap <leader>t <Plug>MarkdownPreviewStop
