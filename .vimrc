@@ -64,37 +64,25 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " 自动补全
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes' "airline 的主题
 Plug 'Yggdroot/indentLine'
-Plug 'ferrine/md-img-paste.vim'
-Plug 'iamcco/markdown-preview.nvim'	" MarkDown预览
 Plug 'luochen1990/rainbow'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 call plug#end()
 
-"======== MarkDown 插件设置 ========
-"设置默认储存文件夹。这里表示储存在当前文档所在文件夹下的'pic'文件夹下，相当于 ./pic/
-let g:mdip_imgdir = 'pic'
-"设置默认图片名称。当图片名称没有给出时，使用默认图片名称
-let g:mdip_imgname = 'image'
-"设置快捷键，个人喜欢 Ctrl+p 的方式，比较直观
-autocmd FileType markdown nnoremap <silent> <C-p> :call mdip#MarkdownClipboardImage()<CR>F%i
-" 高亮数学公式
-let g:vim_markdown_math = 1
-" 指定浏览器路径
-let g:mkdp_path_to_chrome = "/usr/bin/microsoft-edge-stable"
+let mapleader=";"
 
-"======== NERDTree 设置 ========
-let mapleader="\<space>"
+" ======== NERDTree 设置 ========
+let NERDTreeShowHidden=1 " 显示隐藏文件
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 map <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :NERDTreeFind<CR>
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 " ======= airline 配置 =======
 " 设置状态栏
 let g:airline#extensions#tabline#enabled = 1
@@ -141,3 +129,6 @@ hi PmenuSel ctermfg=white ctermbg=100
 hi CocFloating ctermfg=black ctermbg=150
 " coc自动补全按键设置
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+# 清除搜索高亮
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
