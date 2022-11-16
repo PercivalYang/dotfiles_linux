@@ -122,6 +122,7 @@ alias grep="grep --color=auto"
 alias me="microsoft-edge-stable"
 alias vuze="~/Application/Downloads/vuze/azureus"
 alias pyc="~/Application/pycharm/bin/pycharm.sh"
+alias vim=nvim
 
 source /home/yangziyin/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # echo "export TERM=xterm-256color" >> ~/.zshrc
