@@ -70,7 +70,6 @@ Plug 'vim-airline/vim-airline-themes' "airline 的主题
 Plug 'Yggdroot/indentLine'
 Plug 'luochen1990/rainbow'
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'IngoMeyer441/coc_current_word' " coc-highlight的require extensions
 
 call plug#end()
 
