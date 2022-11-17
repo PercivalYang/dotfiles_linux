@@ -163,3 +163,13 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 	" yank.priority: Priority of yank completion source, default: 90.
 	" yank.limit: Max completion item count from yank history.
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr> 
+
+" coc-snippets
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand) " imap: insert mode
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select) " vmap: visual and select mode
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+" Use <leader>x for convert visual selected code to snippet
+xmap <leader>x  <Plug>(coc-convert-snippet) " xmap: visual mode
