@@ -133,6 +133,13 @@ nmap <leader>l <Plug>AirlineSelectNextTab
 " 设置切换tab的快捷键 <\> + <q> 退出当前的 tab
 nmap <leader>q :bp<cr>:bd #<cr>
 
+" ========== coc扩展设置 ==========
+" *coc-vimlsp*
+	" document highlight
+let g:markdown_fenced_languages = [
+      \ 'vim',
+      \ 'help'
+      \]
 " coc背景色设置
 colors ron
 hi Pmenu ctermfg=7 ctermbg=100
