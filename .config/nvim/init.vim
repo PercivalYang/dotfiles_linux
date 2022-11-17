@@ -107,16 +107,16 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline_section_z='P:%p%% R:%l C:%c'
 let g:airline_section_warning=''
 let g:airline#extensions#tabline#buffer_idx_format = {
-       \ '0': '0',
-       \ '1': '1',
-       \ '2': '2',
-       \ '3': '3',
-       \ '4': '4',
-       \ '5': '5',
-       \ '6': '6',
-       \ '7': '7',
-       \ '8': '8',
-       \ '9': '9'
+       \ '0': '0 ',
+       \ '1': '1 ',
+       \ '2': '2 ',
+       \ '3': '3 ',
+       \ '4': '4 ',
+       \ '5': '5 ',
+       \ '6': '6 ',
+       \ '7': '7 ',
+       \ '8': '8 ',
+       \ '9': '9 '
        \}
 " 设置切换tab的快捷键 <\> + <i> 切换到第i个 tab
 nmap <leader>1 <Plug>AirlineSelectTab1
