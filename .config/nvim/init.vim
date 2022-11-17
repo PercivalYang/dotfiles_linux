@@ -70,6 +70,7 @@ Plug 'vim-airline/vim-airline-themes' "airline 的主题
 Plug 'Yggdroot/indentLine'
 Plug 'luochen1990/rainbow'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
@@ -78,10 +79,10 @@ let mapleader=";"
 " ======== Markdown Preview configuration ======== 
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1  " auto close preview
-let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser to open preview page
+" let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser to open preview page
 let g:mkdp_echo_preview_url = 1 " echo preview page url in cmd, default:0
 let g:mkdp_theme='dark'
-let g:mkdp_port = '8583'
+let g:mkdp_port = '8585'
 let g:mkdp_open_ip = '172.22.76.144'
 
 nmap <leader>s <Plug>MarkdownPreview
@@ -173,3 +174,7 @@ vmap <C-j> <Plug>(coc-snippets-select) " vmap: visual and select mode
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 " Use <leader>x for convert visual selected code to snippet
 xmap <leader>x  <Plug>(coc-convert-snippet) " xmap: visual mode
+
+
+" commentary.vim
+autocmd FileType apache setlocal commentstring=#\ %s
