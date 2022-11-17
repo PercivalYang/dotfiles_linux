@@ -104,6 +104,8 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_theme = 'papercolor'  " 主题
 let g:airline#extensions#keymap#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline_section_z='P:%p%% R:%l C:%c'
+let g:airline_section_warning=''
 let g:airline#extensions#tabline#buffer_idx_format = {
        \ '0': '0',
        \ '1': '1',
@@ -161,4 +163,3 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 	" yank.priority: Priority of yank completion source, default: 90.
 	" yank.limit: Max completion item count from yank history.
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr> 
-let g:airline_section_warnning =''
