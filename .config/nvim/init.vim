@@ -69,6 +69,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes' "airline 的主题
 Plug 'Yggdroot/indentLine'
 Plug 'luochen1990/rainbow'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
