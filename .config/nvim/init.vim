@@ -81,6 +81,7 @@ let g:mkdp_auto_close = 1  " auto close preview
 let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser to open preview page
 let g:mkdp_echo_preview_url = 1 " echo preview page url in cmd, default:0
 let g:mkdp_theme='dark'
+let g:mkdp_port = '8583'
 let g:mkdp_open_ip = '172.22.76.144'
 
 nmap <leader>s <Plug>MarkdownPreview
@@ -91,7 +92,6 @@ nmap <leader>p <Plug>MarkdownPreviewToggle
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 map <F2> :NERDTreeToggle<CR>
-nnoremap <F3> :NERDTreeFind<CR>
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " ======= airline 配置 =======
