@@ -70,6 +70,7 @@ Plug 'vim-airline/vim-airline-themes' "airline 的主题
 Plug 'Yggdroot/indentLine'
 Plug 'luochen1990/rainbow'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'IngoMeyer441/coc_current_word' " coc-highlight的require extensions
 
 call plug#end()
 
@@ -147,3 +148,17 @@ hi PmenuSel ctermfg=white ctermbg=100
 hi CocFloating ctermfg=black ctermbg=150
 " coc自动补全按键设置
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" coc-yank
+" -A means auto preview, --normal means open list on normal mode
+" Features:
+	" Highlight yank text and presist yank list across vim instances(across
+	" tmux window and session)
+" Options:
+	" yank.highlight.enable enable highlight feature, default: true.
+	" yank.highlight.duration duration of highlight in miliseconds, default: 500.
+	" yank.list.maxsize maxsize of yank list, default: 200
+	" yank.enableCompletion: Enable completion support for yanked text, default: true
+	" yank.priority: Priority of yank completion source, default: 90.
+	" yank.limit: Max completion item count from yank history.
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr> 
