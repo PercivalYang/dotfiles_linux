@@ -79,7 +79,6 @@ let NERDTreeShowHidden=1 " 显示隐藏文件
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 map <F2> :NERDTreeToggle<CR>
-nnoremap <F3> :NERDTreeFind<CR>
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
