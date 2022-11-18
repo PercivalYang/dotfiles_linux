@@ -78,11 +78,13 @@ let mapleader=";"
 " ======== Markdown Preview configuration ======== 
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1  " auto close preview
-" let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser to open preview page
+let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser to open preview page
 let g:mkdp_echo_preview_url = 1 " echo preview page url in cmd, default:0
 let g:mkdp_theme='dark'
 let g:mkdp_port = '8585'
-let g:mkdp_open_ip = '172.22.76.144'
+let g:mkdp_open_ip = '192.168.0.161'
+" let g:mkdp_markdown_css = '/home/yangziyin/Documents/MkdTheme/cement-dark.css'
+" let g:mkdp_highlight_css = '/home/yangziyin/Documents/highlight.css'
 
 nmap <leader>s <Plug>MarkdownPreview
 nmap <leader>t <Plug>MarkdownPreviewStop
