@@ -82,7 +82,7 @@ let g:mkdp_browser = '/usr/bin/microsoft-edge-stable' " specify default browser 
 let g:mkdp_echo_preview_url = 1 " echo preview page url in cmd, default:0
 let g:mkdp_theme='dark'
 let g:mkdp_port = '8585'
-let g:mkdp_open_ip = '192.168.0.161'
+" let g:mkdp_open_ip = '192.168.0.161'
 " let g:mkdp_markdown_css = '/home/yangziyin/Documents/MkdTheme/cement-dark.css'
 " let g:mkdp_highlight_css = '/home/yangziyin/Documents/highlight.css'
 
