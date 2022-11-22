@@ -127,6 +127,7 @@ alias vnote='~/Application/vnote-linux-x64_v3.15.1.AppImage'
 alias clash='~/Application/clash/cfw &'
 alias wx='/opt/apps/com.qq.weixin.deepin/files/run.sh &'
 alias qq='/opt/apps/com.qq.im.deepin/files/run.sh &'
+alias cloudm='netease-cloud-music&'
 
 source /home/yangziyin/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # echo "export TERM=xterm-256color" >> ~/.zshrc
