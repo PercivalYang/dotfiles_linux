@@ -119,7 +119,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 alias me="microsoft-edge-stable &"
-alias vuze="~/Application/Downloads/vuze/azureus &"
+alias vuze="~/Application/vuze/vuze &"
 alias pyc="~/Application/pycharm/bin/pycharm.sh &"
 alias vim=nvim
 alias vnote='~/Application/vnote-linux-x64_v3.15.1.AppImage &'
@@ -128,6 +128,8 @@ alias wx='/opt/apps/com.qq.weixin.deepin/files/run.sh &'
 alias qq='/opt/apps/com.qq.im.deepin/files/run.sh &'
 alias cloudm='netease-cloud-music&'
 alias idea='~/Application/idea-IC-222.4345.14/bin/idea.sh &'
+alias music='netease-cloud-music&'
+alias goc='google-chrome&'
 
 source /home/yangziyin/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # echo "export TERM=xterm-256color" >> ~/.zshrc
