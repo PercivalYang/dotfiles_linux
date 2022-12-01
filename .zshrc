@@ -121,7 +121,9 @@ unset __conda_setup
 alias me="microsoft-edge-stable &"
 alias vuze="~/Application/vuze/vuze &"
 alias pyc="~/Application/pycharm/bin/pycharm.sh &"
-alias vim=nvim
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
 alias vnote='~/Application/vnote-linux-x64_v3.15.1.AppImage &'
 alias clash='~/Application/clash/cfw &'
 alias wx='/opt/apps/com.qq.weixin.deepin/files/run.sh &'
