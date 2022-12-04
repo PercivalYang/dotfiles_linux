@@ -49,6 +49,13 @@ packer.startup(
     use("lukas-reineke/indent-blankline.nvim")
     use("tami5/lspsaga.nvim" )
     use("mhartington/formatter.nvim")
+    -- install without yarn or npm
+    use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   end)
 pcall(
