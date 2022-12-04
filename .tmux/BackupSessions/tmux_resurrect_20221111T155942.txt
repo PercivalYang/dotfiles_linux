@@ -1,8 +1,0 @@
-pane	0	1	1	:*	1	Linux240	:/home/yangziyin	0	vim	:vim .tmux.conf
-pane	0	1	1	:*	2	Linux240	:/home/yangziyin/.tmux/BackupSessions	1	zsh	:
-pane	0	2	0	:	1	Linux240	:/home/yangziyin/clash	1	zsh	:/home/yangziyin/clash/cfw --enable-crashpad
-pane	0	3	0	:-	1	Linux240	:/home/yangziyin	1	zsh	:
-window	0	1	:dotfiles	1	:*	8f60,105x29,0,0{52x29,0,0,0,52x29,53,0,1}	off
-window	0	2	:localApp	0	:	ccff,105x29,0,0,2	off
-window	0	3	:zsh	0	:-	cd00,105x29,0,0,3	:
-state	0	
