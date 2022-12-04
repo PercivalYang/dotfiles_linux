@@ -1,0 +1,72 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+" 显示相对行号
+set relativenumber
+" 显示行号
+set number
+" 显示当前模式
+set showmode
+" 搜索语法高亮
+set hlsearch
+" 关闭兼容vi
+set nocompatible
+" 开启语法高亮功能
+syntax enable
+" 模式搜索实时预览,增量搜索
+set insearch
+set so=5
+syntax on
+set cursorline
+" 共享系统粘贴板
+set clipborad=unamed
+" 总是显示状态栏
+set laststatus=2
+" 显示光标当前位置
+set ruler
+" 为IdeaVim插件增加自动切换为英文输入法的功能
+set keep-english-in-normal
+
+let mapleader = ","
+" 打开最近项目
+nnoremap <Leader>o :<C-u>action RecentProjectListGroup<CR>
+" 跳转到变量声明处
+nnoremap gd :action GotoDeclaration
+" 清楚高亮搜索
+nnoremap <Leader>sc :nohlsearch<CR>
+" 重命名文件
+nnoremap <Leader>rn :action RenameFile<CR>
+" 新建文件
+nnoremap <Leader>ne :action NewElement<CR>
+" 隐藏窗口(windows hide)
+nnoremap <Leader>wh :action HideActiveWindow<CR>
+" 删除当前文件 (快速删除)
+nnoremap <Leader>nd :action SafeDelete<CR>
+" 运行当前文件
+nnoremap <Leader>gr :action RunClass<CR>
+" Debug当前文件
+nnoremap <Leader>dg :action DebugClass<CR>
+
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <Leader>d to start debug
+"map <Leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+set ideajoin
