@@ -8,6 +8,10 @@ set scrolloff=5
 
 " Do incremental searching.
 set incsearch
+set easymotion
+set NERDTree
+set commentary
+set surround
 " 显示相对行号
 set relativenumber
 " 显示行号
@@ -34,9 +38,10 @@ set ruler
 " 为IdeaVim插件增加自动切换为英文输入法的功能
 set keep-english-in-normal
 
-let mapleader = ","
+let mapleader = " "
 " 打开最近项目
 nnoremap <Leader>o :<C-u>action RecentProjectListGroup<CR>
+nnoremap <Leader>e :NERDTreeToggle<CR>
 " 跳转到变量声明处
 nnoremap gd :action GotoDeclaration
 " 清楚高亮搜索
