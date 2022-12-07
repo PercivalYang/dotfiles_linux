@@ -42,6 +42,7 @@ let mapleader = " "
 " 打开最近项目
 nnoremap <Leader>o :<C-u>action RecentProjectListGroup<CR>
 nnoremap <Leader>e :NERDTreeToggle<CR>
+nnoremap <Leader>p :NERDTreeFocus<CR>
 " 跳转到变量声明处
 nnoremap gd :action GotoDeclaration
 " 清楚高亮搜索
