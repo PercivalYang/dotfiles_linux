@@ -39,6 +39,8 @@ set ruler
 set keep-english-in-normal
 
 let mapleader = " "
+" Press jk fast to enter
+keymap("i", "jk", "<ESC>", opts)
 " 打开最近项目
 nnoremap <Leader>o :<C-u>action RecentProjectListGroup<CR>
 nnoremap <Leader>e :NERDTreeToggle<CR>
@@ -46,7 +48,7 @@ nnoremap <Leader>p :NERDTreeFocus<CR>
 " 跳转到变量声明处
 nnoremap gd :action GotoDeclaration
 " 清楚高亮搜索
-nnoremap <Leader>sc :nohlsearch<CR>
+nnoremap <Leader>h :nohlsearch<CR>
 " 重命名文件
 nnoremap <Leader>rn :action RenameFile<CR>
 " 新建文件
